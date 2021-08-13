@@ -12,6 +12,14 @@
     width: 100%;
   }
 }
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -51,6 +59,13 @@
   height: 20vh;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0;
+}
+.about .image-opacity {
+  animation-name: opacity;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
 }
 @media (min-width: 640px) {
   .about {

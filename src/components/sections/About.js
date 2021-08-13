@@ -43,7 +43,7 @@ const About = props => {
 
                 </div>
             </div>
-            <div className={`about__image ${visible ? "animate-border" : null}`}></div>
+            <div className={`about__image ${visible ? "image-opacity" : null}`}></div>
         </div >
     )
 }

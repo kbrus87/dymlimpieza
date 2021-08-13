@@ -44,6 +44,14 @@
     height: 20vh;
     background-size: cover;
     background-repeat: no-repeat;
+
+    opacity: 0;
+  }
+  .image-opacity {
+    animation-name: opacity;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
   }
   @media (min-width: $bp640) {
     flex-direction: row-reverse;
