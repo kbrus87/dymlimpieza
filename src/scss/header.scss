@@ -1,0 +1,46 @@
+@import "./variables.scss";
+a {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+
+  &__banner {
+    background: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    @media screen and (min-width: $bp480) {
+      height: 20vw;
+    }
+  }
+  &__navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: $button-light;
+    &__item {
+      background: $button-light;
+      padding: 1rem 2.5rem;
+      transform: skew($button-skew);
+      -webkit-transition: background-color $transition-time ease-out;
+      -moz-transition: background-color $transition-time ease-out;
+      -o-transition: background-color $transition-time ease-out;
+      transition: background-color $transition-time ease-out;
+      a {
+        display: block;
+        transform: skew(-$button-skew);
+        text-decoration: none;
+        color: black;
+        font-family: $font-main;
+        font-weight: 300;
+        text-transform: capitalize;
+      }
+      &:hover {
+        background-color: $button-hover;
+        cursor: pointer;
+      }
+    }
+  }
+}

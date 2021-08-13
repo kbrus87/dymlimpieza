@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+@keyframes titleborder {
+  0% {
+    width: 0%;
+    left: $off-left;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}

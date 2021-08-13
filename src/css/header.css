@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+}
+.header__banner {
+  background: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+@media screen and (min-width: 480px) {
+  .header__banner {
+    height: 20vw;
+  }
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background: #fcf9f9;
+}
+.header__navigation__item {
+  background: #fcf9f9;
+  padding: 1rem 2.5rem;
+  transform: skew(20deg);
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+.header__navigation__item a {
+  display: block;
+  transform: skew(-20deg);
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.header__navigation__item:hover {
+  background-color: #5aa6c8;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */

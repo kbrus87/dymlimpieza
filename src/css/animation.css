@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@keyframes titleborder {
+  0% {
+    width: 0%;
+    left: -1800px;
+  }
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=animation.css.map */
