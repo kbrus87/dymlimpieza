@@ -6,6 +6,7 @@ a {
 
 .header {
   width: 100%;
+  position: relative;
 }
 .header__banner {
   background: url("../img/banner.jpg");
@@ -24,6 +25,11 @@ a {
   justify-content: space-around;
   width: 100%;
   background: #fcf9f9;
+}
+@media screen and (min-width: 480px) {
+  .header__navigation {
+    position: absolute;
+  }
 }
 .header__navigation__item {
   background: #fcf9f9;
@@ -46,6 +52,12 @@ a {
 .header__navigation__item:hover {
   background-color: #5aa6c8;
   cursor: pointer;
+}
+.header .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -4,7 +4,7 @@ a {
 }
 .header {
   width: 100%;
-
+  position: relative;
   &__banner {
     background: url("../img/banner.jpg");
     background-repeat: no-repeat;
@@ -20,6 +20,11 @@ a {
     justify-content: space-around;
     width: 100%;
     background: $button-light;
+
+    @media screen and (min-width: $bp480) {
+      position: absolute;
+    }
+
     &__item {
       background: $button-light;
       padding: 1rem 2.5rem;
@@ -42,5 +47,12 @@ a {
         cursor: pointer;
       }
     }
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
   }
 }

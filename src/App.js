@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <Container>
-        <About id="la empresa" />
+        <About id="nosotros" />
         <About id="servicios" />
       </Container>
       <Footer />
