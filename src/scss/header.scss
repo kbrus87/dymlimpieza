@@ -5,6 +5,19 @@ a {
 .header {
   width: 100%;
   position: relative;
+
+  &__presentation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0 3rem;
+    font-family: $font-text;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
   &__banner {
     background: url("../img/banner.jpg");
     background-repeat: no-repeat;
@@ -12,9 +25,10 @@ a {
     background-position: center;
     height: 200px;
     @media screen and (min-width: $bp480) {
-      height: 20vw;
+      height: 30vw;
     }
   }
+
   &__navigation {
     display: flex;
     justify-content: space-around;

@@ -8,6 +8,17 @@ a {
   width: 100%;
   position: relative;
 }
+.header__presentation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 0 3rem;
+  font-family: "Poiret One", cursive;
+}
+.header__presentation h1 {
+  font-size: 4rem;
+}
 .header__banner {
   background: url("../img/banner.jpg");
   background-repeat: no-repeat;
@@ -17,7 +28,7 @@ a {
 }
 @media screen and (min-width: 480px) {
   .header__banner {
-    height: 20vw;
+    height: 30vw;
   }
 }
 .header__navigation {

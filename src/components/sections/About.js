@@ -15,9 +15,11 @@ const useOnScreen = (options) => {
             observer.observe(ref.current);
         }
 
+        const forcleanup = ref.current;
+
         return () => {
             if (ref.current) {
-                observer.unobserve(ref.current);
+                observer.unobserve(forcleanup);
             }
         }
     }, [ref, options])
